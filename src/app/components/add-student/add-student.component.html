@@ -1,16 +1,18 @@
-<div class="container">
-    <div class="row">
-            <form class="form-inline" [formGroup]="fm" (ngSubmit)="submit()">
-                <div class="form-group ">
-                    <input type="text" class="form-control" id="id" name="id" placeholder="id" formControlName="id">
-                </div>
-                <div class="form-group ">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" formControlName="name">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="surname" name="surname" placeholder="Surname" formControlName="surname">
-                </div>
-                <button type="submit" class="btn btn-primary mb-2">Add</button>
-            </form>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <form class="form" [formGroup]="fm" (ngSubmit)="submit()">
+            <div class="form-group ">
+                <input type="text" class="form-control-sm" id="id" name="id" placeholder="id" formControlName="id">
+            </div>
+            <div class="form-group ">
+                <input type="text" class="form-control-sm" id="name" name="name" placeholder="Name"
+                    formControlName="name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control-sm" id="surname" name="surname" placeholder="Surname"
+                    formControlName="surname">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Add</button>
+        </form>
     </div>
 </div>
